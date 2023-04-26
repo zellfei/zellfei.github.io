@@ -1,1 +1,87 @@
-hello world
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>记录</title>
+  <style>
+    /* 样式同上 */
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>调整内心，随便写写。</h1>
+    <p id="poem"></p>
+    <p></p>
+    <hr>
+    <h2>今日</h2>
+    <form id="log-form">
+      <!-- <label for="log">添加日志：</label> -->
+      <br>
+      <textarea id="log" name="log" rows="6" cols="50"></textarea>
+      <br>
+      <button type="submit">提交</button>
+    </form>
+    <ul id="log-list">
+    </ul>
+  </div>
+  <script>
+    const logForm = document.querySelector('#log-form');
+    const logTextarea = document.querySelector('#log');
+    const logList = document.querySelector('#log-list');
+    const STORAGE_KEY = 'my-logs'; // 定义本地存储的键名
+    
+    // 读取本地存储中保存的日志信息
+    const savedLogs = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    for (const savedLog of savedLogs) {
+      const { content, time } = savedLog;
+      const logItem = document.createElement('li');
+      logItem.innerHTML = `<span class="log-time">${time}</span> - <span class="log-content">${content}</span>`;
+      logList.appendChild(logItem);
+    }
+    
+    logForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const logContent = logTextarea.value;
+      const logTime = new Date().toLocaleString();
+      const logItem = document.createElement('li');
+      logItem.innerHTML = `<span class="log-time">${logTime}</span> - <span class="log-content">${logContent}</span>`;
+      logList.prepend(logItem);
+      logTextarea.value = '';
+      
+      // 存储提交的日志信息到本地
+      const savedLogs = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+      savedLogs.push({ content: logContent, time: logTime });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(savedLogs));
+    });
+  </script>
+
+<script>
+    const poems = [
+      '春眠不觉晓，处处闻啼鸟。——唐代孟浩然《春晓》',
+      '夕阳无限好，只是近黄昏。——唐代李商隐《夕阳箴言》',
+      '生当作人杰，死亦为鬼雄。——元代于谦《满江红·登科前》',
+      '日照香炉生紫烟，遥看瀑布挂前川。——唐代刘禹锡《黄鹤楼》',
+      '才下眉头，却上心头。——唐代王之涣《登鹳雀楼》',
+      '白日依山尽，黄河入海流。——唐代王之涣《登鹳雀楼》',
+      '此情可待成追忆，只是当时已惘然。——唐代李商隐《锦瑟》',
+      '别有幽愁暗恨生，此时无声胜有声。——清代纳兰性德《采桑子·常记溪亭日暮》',
+      '采菊东篱下，悠然见南山。——唐代陶渊明《饮酒·其一》',
+      '君不见黄河之水天上来，奔流到海不复回。——北宋杨万里《临江仙·滁州西涧》',
+      '昨夜西风凋碧树，独上高楼，望尽天涯路。——唐代王之涣《登鹳雀楼》',
+      '问君能有几多愁，恰似一江春水向东流。——唐代李白《长恨歌》',
+      '夜来幽梦忽还乡，小轩窗，正梳妆。——唐代杜牧《清平调·其一》',
+      '黄河远上白云间，一片孤城万仞山。——唐代杜牧《登高》'
+    ];
+    
+    function getPoem() {
+      const index = Math.floor(Math.random() * poems.length);
+      return poems[index];
+    }
+    
+    const poemElem = document.querySelector('#poem');
+    poemElem.innerText = getPoem();
+  </script>
+
+</body>
+</html>
+
