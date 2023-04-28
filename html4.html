@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>五一节日</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			background-color: #0072C6; /* 使用布鲁克蓝底背景 */
+			color: #FFFFFF; /* 使用白色字体 */
+			text-align: center; /* 使得文字居中 */
+			font-size: 5em; /* 设置字体大小 */
+			font-weight: bold; /* 设置字体为粗体 */
+			margin-top: 50px; /* 设置上边距 */
+		}
+	</style>
+</head>
+<body>
+    <!-- 五一 -->
+	<span id="date"></span>
+	<script>
+    
+
+
+
+function updateTime() {
+	var time = new Date();
+	var hours = time.getHours().toString().padStart(2, '0');
+	var minutes = time.getMinutes().toString().padStart(2, '0');
+	var seconds = time.getSeconds().toString().padStart(2, '0');
+	var strTime = hours + ':' + minutes + ':' + seconds;
+	document.getElementById('time').innerText = strTime;
+  
+	// 获取页面滚动高度
+	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  
+	// 当前滚动高度小于页面总高度，往上滚动10像素
+	if (scrollTop < (document.documentElement.scrollHeight || document.body.scrollHeight)) {
+	  window.scrollBy(0, -10);
+	} else {
+	  // 滚动到底部后，停留1秒再回到顶部
+	  clearInterval(timer);
+	  setTimeout(function() {
+		timer = setInterval(updateTime, 1000);
+	  }, 1000);
+	  window.scroll(0, 0);
+	}
+  }
+  
+  // 初始化页面时间
+  updateTime();
+  
+  // 每秒钟自动更新时间
+  var timer = setInterval(updateTime, 1000);
+  
+
+        
+	</script>
+</body>
+</html>
+
+
