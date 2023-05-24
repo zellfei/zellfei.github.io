@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="检测设备通讯接口应用目标在诸多不同厂家、不同通讯接口的各类仪器上，实现无感数据采集，流式数据传输，从根本上加快各级人员对数据的应用。 原始数据读写获取数据最常规稳定的方式，就是通过设备直接或者间接获得。一种的方式，另一种的方式。一般较为简单的设备在进行测量得到值之后，会直接传输到设备上。另一种是通常可以将存入各种不同格式的数据文件中，其中常见的包括Excel、txt、word等，不常见的有nda、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="检测设备通讯接口应用">
+<meta property="og:url" content="https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="检测设备通讯接口应用目标在诸多不同厂家、不同通讯接口的各类仪器上，实现无感数据采集，流式数据传输，从根本上加快各级人员对数据的应用。 原始数据读写获取数据最常规稳定的方式，就是通过设备直接或者间接获得。一种的方式，另一种的方式。一般较为简单的设备在进行测量得到值之后，会直接传输到设备上。另一种是通常可以将存入各种不同格式的数据文件中，其中常见的包括Excel、txt、word等，不常见的有nda、">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-05-24T15:34:49.000Z">
+<meta property="article:modified_time" content="2023-05-24T15:36:53.718Z">
+<meta property="article:author" content="Zellfei Jiang">
+<meta property="article:tag" content="解决方案">
+<meta name="twitter:card" content="summary">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>检测设备通讯接口应用</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+
+    
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- rss -->
+    
+    
+    <!-- jquery -->
+    
+<script src="/lib/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <div class="banner">
+<div id="blogtitel" class="blogtitel"></div>
+<ul id="wrapper" class="wrapper">
+  <div class="sun">
+    <div class="star"></div>
+  </div>
+  <div class="mercury">
+    <div class="planet">
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <div class="venus">
+    <div class="planet">
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <div class="earth">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="mars">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="jupiter">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+</ul>
+</div>
+
+    <div class="background">
+      
+        <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2023/05/23/NLP%E5%BF%83%E7%90%86%E5%AD%A6/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&text=检测设备通讯接口应用"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&is_video=false&description=检测设备通讯接口应用"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=检测设备通讯接口应用&body=Check out this article: https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&name=检测设备通讯接口应用&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">检测设备通讯接口应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%86%99"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">原始数据读写</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%AA%E5%99%A8%E8%AE%BE%E5%A4%87%E6%93%8D%E7%BA%B5"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">仪器设备操纵</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+      
+      <div class="content index width mx-auto px2 my4">
+          
+          <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        检测设备通讯接口应用
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name"></span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2023-05-24T15:34:49.000Z" itemprop="datePublished">2023-05-24</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" rel="tag">解决方案</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="检测设备通讯接口应用"><a href="#检测设备通讯接口应用" class="headerlink" title="检测设备通讯接口应用"></a>检测设备通讯接口应用</h1><h4 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h4><p>在诸多不同厂家、不同通讯接口的各类仪器上，实现无感数据采集，流式数据传输，从根本上加快各级人员对数据的应用。</p>
+<h4 id="原始数据读写"><a href="#原始数据读写" class="headerlink" title="原始数据读写"></a>原始数据读写</h4><p>获取数据最常规稳定的方式，就是通过设备直接或者间接获得。一种的方式，另一种的方式。<br>一般较为简单的设备在进行测量得到值之后，会直接传输到设备上。<br>另一种是通常可以将存入各种不同格式的数据文件中，其中常见的包括Excel、txt、word等，不常见的有nda、spc等。</p>
+<p>如果想进行数据采集，一个方法链接通讯接口，实时读取。另一个在数据文件中读取。常见格式的一半比较简单，每种格式列出相应的方法。</p>
+<p>以下专门讲解不常见格式的通用解决方案。<br>数据文件通常为二进制文件，可以采用这种方式读取再对文件里的信息进行破解，省去不常见格式转换为常见格式的繁琐时间。</p>
+<h4 id="仪器设备操纵"><a href="#仪器设备操纵" class="headerlink" title="仪器设备操纵"></a>仪器设备操纵</h4>
+  </div>
+</article>
+
+
+
+      </div>
+      
+       <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">检测设备通讯接口应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%86%99"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">原始数据读写</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%AA%E5%99%A8%E8%AE%BE%E5%A4%87%E6%93%8D%E7%BA%B5"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">仪器设备操纵</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&text=检测设备通讯接口应用"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&is_video=false&description=检测设备通讯接口应用"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=检测设备通讯接口应用&body=Check out this article: https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&title=检测设备通讯接口应用"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zellfei.github.io/2023/05/24/%E6%A3%80%E6%B5%8B%E8%AE%BE%E5%A4%87%E9%80%9A%E8%AE%AF%E6%8E%A5%E5%8F%A3%E5%BA%94%E7%94%A8/&name=检测设备通讯接口应用&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+      <!-- <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 Zellfei Jiang
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        
+      </ul>
+    </nav>
+  </div>
+</footer> -->
+
+      
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- Google Analytics -->
+
+<!-- Disqus Comments -->
+
+
+    </div>
+</body>
+</html>
