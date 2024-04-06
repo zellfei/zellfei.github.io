@@ -2,13 +2,13 @@
 
 :root
 {
-    --font-color-0: #04077e;
-    --font-color-1: #000;
-    --font-color-2: #666;
-    --font-color-3: #aaa;
-    --bg-color-1: #eee;
-    --line-1: #ccc;
-    --line-2: #ddd;
+    --font-color-0: #000000;
+    --font-color-1: #000000;
+    --font-color-2: #000000;
+    --font-color-3: #000000;
+    --bg-color-1: #000000;
+    --line-1: #000000;
+    --line-2: #000000;
 }
 p
 {
@@ -16,6 +16,8 @@ p
     white-space: pre-wrap;
 }
 
+
+/* 纸张下半部分 */
 body
 {
     font-family: "Times New Roman", Helvetica, Tahoma, Arial, "LXGW WenKai", "notoserifsc-medium", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
@@ -23,23 +25,27 @@ body
     line-height: 1.7;
     /* letter-spacing: 0.6px; */
     color: var(--font-color-1);
-    background: #e4e4e4;
+    background: #ffffff;
     height: 100%;
 }
 
 
 
+/* title 字体颜色 */
 a
 {
     text-decoration: none;
-    color: #4f7dde;
+    color: #ff6600;
 }
 
+/* 纸张颜色上半部分 */
 .paper
 {
     padding: 4vw;
-    background: #e4e4e4;
+    background: #ffffff;
 }
+
+/* 纸张中间主体颜色 */
 .paper-main
 {
     width: 100%;
@@ -52,6 +58,8 @@ a
     background: #ffffff;
     /* box-shadow:  0px 5px 13px #616161, -5px -5px 13px #ffffff; */
 }
+
+/* 首页纸张主题颜色 */
 .index-main
 {
     width: 100%;
@@ -62,6 +70,7 @@ a
     background: #ffffff;
     /* box-shadow:  0px 5px 13px #616161, -5px -5px 13px #ffffff; */
 }
+
 
 .index-header-line
 {
@@ -158,6 +167,8 @@ a
 {
     font-size: 1rem;
 }
+
+
 .post-header .go-home
 {
     display: block;
@@ -207,6 +218,7 @@ a
     line-height: 1.5;
     margin-bottom: 12px;
     color: var(--font-color-1);
+    /* color: #0049e6; */
     /*transition: color ease-in-out .5s;*/
 }
 .post-title:hover
@@ -462,7 +474,7 @@ a
 /* add by myself */
 .circle-green {
     padding: 40px 25px 50px;
-    border: solid 1px green;
+    border: solid 1px rgb(0, 0, 0);
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -472,7 +484,7 @@ a
 }
 .circle-red {
     padding: 40px 25px 50px;
-    border: solid 1px rgb(156, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -482,7 +494,7 @@ a
 }
 .circle-orange {
     padding: 40px 25px 50px;
-    border: solid 1px rgb(244, 135, 26);
+    border: solid 1px rgb(0, 0, 0);
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -492,7 +504,7 @@ a
 }
 .circle-blue {
     padding: 40px 25px 50px;
-    border: solid 1px rgb(81, 114, 221);
+    border: solid 1px rgb(0, 0, 0);
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -550,12 +562,12 @@ a
 
 /* list页面 标签访问过后的颜色 */
 .archive-main a:link { 
-    color:#4f7dde; 
+    color:#ff6600; 
     text-decoration:none; 
 } 
 
 .archive-main a:visited { 
-    color:#9c9caf; 
+    color:#000000; 
     text-decoration: underline; 
 } 
 .archive-main a:hover {
@@ -569,7 +581,7 @@ a
 } 
 
 .index-header a:visited { 
-    color:#9c9caf; 
+    color:#000000; 
     text-decoration: underline; 
 } 
 
@@ -594,7 +606,7 @@ a
 /* header相关 */
 .description {
     font-size: smaller;
-    color: #9c9caf;
+    color: #000000;
     margin-top: -24px;
 }
 
