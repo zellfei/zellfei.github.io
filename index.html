@@ -72,60 +72,62 @@
             padding-left: 2rem; /* 增加左侧padding */
             max-width: 100%; /* 允许内容占据全宽 */
             margin: 0;
+            /* padding-top 32px， */
+            margin-top: 16px;
+            font-size: 0.9rem;
         }
 
         a {
-            color: hsl(var(--foreground));
+            color: blue;
             text-decoration: underline;
             text-underline-offset: 4px;
             text-decoration-color: blue;
             text-decoration-thickness: 1.5px;
+            
         }
 
         .header {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-weight: 500;
-            margin-bottom: 2rem;
+            /* font-weight: 500; */
+            margin-bottom: 0.5rem;
+            
         }
 
         .projects {
-            margin-top: 2rem;
+            margin-top: 20px;
         }
 
-        .projects h2 {
-            font-size: 1.25rem;
-            /* font-weight: 600; */
-            margin-bottom: 1rem;
+        .projects h3 {
+            /* 设置为p标签 */
+            font-size: 0.9rem;
         }
 
-        .project-list {
-            list-style-type: none;
-            padding: 0;
+        /* 项目列表中的ul中有h3标签，a标签，p标签，需要设置margin */
+        .projects ul {
+           margin-top: 20px;
         }
 
-        .project-item {
-            margin-bottom: 1rem;
+        .projects ul li {
+            margin-top: 0px;
         }
 
-        .project-title {
-            font-weight: 500;
-            text-decoration: underline;
-            text-underline-offset: 4px;
+        /* 新增：调整h5标签和其后文字的间距 */
+        .projects h4 {
+            margin-bottom: 0.2rem;
         }
 
-        .project-description {
-            font-size: 0.875rem;
-            color: hsl(var(--muted-foreground));
+        .projects h4 + p {
+            margin-top: 0;
         }
+
 
         .about {
-            margin-top: 2rem;
+            margin-top: 0.5rem;
         }
 
         .about h2 {
-            font-size: 1.25rem;
             /* font-weight: 600; */
             margin-bottom: 1rem;
         }
